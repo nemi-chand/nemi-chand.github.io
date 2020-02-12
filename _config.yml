@@ -1,0 +1,63 @@
+# Site
+name: "Nemi Chand"
+title: "Nemi Chand"
+description: "Pragmatic, Experienced Professional, Speakar, Auther"
+logo: 'assets/images/logo.png'
+favicon: 'assets/images/logo.png'
+baseurl:
+google_analytics: 'UA-146416783-1'
+disqus: 'disqus_nemichand'
+mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
+include: ["_pages"]
+permalink: /:title/
+
+# Authors
+authors:
+  Nemi Chand:
+    name: Nemi Chand
+    display_name: Nemi Chand
+    gravatar: e0defa3ae70692f54e7b0d3cee2326a0
+    email: ch.nemichand@gmail.com
+    web: https://www.nemi-chand.com
+    twitter: https://twitter.com/nemidotnet
+    description: "Nemi Chand is a C-sharp Corner MVP, Microsoft® Certified Professional,author,Speaker, senior developer and community lead. Nemi is passionate about community and all things .NET related, having worked with ASP.NET for over 7 years. Nemi is currently developing cloud-native services, using .NET Core, ASP.NET Core and Docker. He enjoys sharing his knowledge through his blog and by presenting at user groups. Nemi is excited to be a part of the .NET community. He enjoys contributing to and maintaining OSS projects, most actively helping save lives with open source software. You can find Nemi online at his blog www.nemi-chand.com and on Twitter as @nemidotnet"
+
+# Plugins
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-archives
+    
+# Archives
+jekyll-archives:
+  enabled:
+    - categories
+  layout: archive
+  permalinks:
+    category: '/category/:name/'
+    
+# Pagination 
+paginate: 6
+paginate_path: /page:num/
+    
+# Other
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
+
+# Adsense (change to "enabled" to activate, also your client id and ad slot. Create a new ad unit from your Adsense account to get the slot.)
+adsense: "disabled"
+adsense-data-ad-client: "ca-pub-1621486443347794"
+adsense-data-ad-slot: "1363087678"
+
+# Lazy Images ("enabled" or "disabled")
+lazyimages: "disabled"
+
+exclude: [changelog.md, LICENSE.txt, README.md, Gemfile, Gemfile.lock]
